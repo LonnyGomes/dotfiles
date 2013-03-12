@@ -1,4 +1,3 @@
-export PS1="[\w]\n[\u@\h]> "
 set -o vi
 export PATH=$PATH:~/bin
 
@@ -6,6 +5,16 @@ export PATH=$PATH:~/bin
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+#add git branch to prompt
+. ~/.git-prompt.bash
+
+#prompted colors
+BLUE="\[\033[1;34m\]"
+WHITE="\[\033[1;37m\]"
+LT_CYAN="\[\033[1;36m\]"
+LT_RED="\[\033[1;31m\]"
+export PS1="$BLUE[$WHITE\w$BLUE]$LT_RED\$(__git_ps1)\n$BLUE[$WHITE\u$LT_CYAN@$WHITE\h$BLUE]$LT_CYAN>$WHITE "
 
 #enables color in the terminal bash shell export
 CLICOLOR=1
