@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/carpelucem/code/iOS/MapBox/com.lonnygomes.DiploMapData/AppData'
+let g:netrw_dirhist_2='/Users/carpelucem/code/web/backbonePOC'
+let g:netrw_dirhist_3='/Users/carpelucem/code/web/backbonePOC/js'
