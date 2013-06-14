@@ -1,0 +1,25 @@
+#!/bin/bash
+# This script creates a symbolic link from the dotfiles repository
+# to your home directory. It allows you to store your dotfiles
+# repository in any desired source location
+GREP=/usr/bin/egrep
+LN=/bin/ln
+
+for curFile in .* ; do
+    ignoredFiles=`echo $curFile|$GREP "(^.[.]*$)|(*.swp$)|(^.git$)"`
+
+    #we want to skip things such as .. and the .git directory
+    if [ ! -z  $ignoredFiles ]; then
+        continue
+    fi
+
+    linkedFilePath="$HOME/$curFile"
+    srcFilePath="`pwd`/$curFile"
+
+    if [ -e  "$linkedFilePath" ]; then
+        echo "The file '$linkedFilePath' already exists, skipping ..." 
+    else
+        echo "Linking $srcFilePath ==> $linkedFilePath"
+        $LN -s "$srcFilePath" "$linkedFilePath" 
+    fi
+done
