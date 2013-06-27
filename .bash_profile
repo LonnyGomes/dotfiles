@@ -1,6 +1,11 @@
 set -o vi
 export PATH=$PATH:~/bin
 
+#load any local bash configurations if they exist
+if [ -f ~/.bash_profile.local ]; then
+    . ~/.bash_profile.local
+fi
+
 #setup git auto completion
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -24,7 +29,10 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 #sets up the prompt color (currently a green similar to linux terminal)
 #export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
 #enables color for iTerm
-#export TERM=xterm-color
+export TERM=xterm-color
 #sets up proper alias commands when called
 alias ls='ls -G'
 alias ll='ls -hl'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
