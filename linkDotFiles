@@ -6,7 +6,7 @@ GREP=/usr/bin/egrep
 LN=/bin/ln
 
 for curFile in .* ; do
-    ignoredFiles=`echo $curFile|$GREP "(^.[.]*$)|(*.swp$)|(^.git$)"`
+    ignoredFiles=`echo $curFile|$GREP "(^.[.]*$)|(.*\.swp$)|(^.git$)"`
 
     #we want to skip things such as .. and the .git directory
     if [ ! -z  $ignoredFiles ]; then
