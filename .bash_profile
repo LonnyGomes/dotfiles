@@ -36,3 +36,13 @@ alias ll='ls -hl'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### GDAL executables
+export PATH="/Library/Frameworks/GDAL.framework/Programs:$PATH"
+
+### node.js local installs path
+export PATH="/usr/local/share/npm/bin:$PATH"
+export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
+
+### add Android sdk tools to path
+export PATH=$PATH:~/code/Android/sdks/adt-current/sdk/tools/
