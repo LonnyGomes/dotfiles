@@ -1,5 +1,5 @@
 set -o vi
-export PATH=$PATH:~/bin
+export PATH=~/bin:/usr/local/bin:$PATH
 
 #load any local bash configurations if they exist
 if [ -f ~/.bash_profile.local ]; then
@@ -34,6 +34,7 @@ export TERM=xterm-color
 alias ls='ls -G'
 alias ll='ls -hl'
 
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -46,3 +47,5 @@ export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
 
 ### add Android sdk tools to path
 export PATH=$PATH:~/code/Android/sdks/adt-current/sdk/tools/
+#set up android SDK
+#export PATH="/Users/carpelucem/code/Android/adt-bundle-mac-x86_64-20130219/sdk/platform-tools:/Users/carpelucem/code/Android/adt-bundle-mac-x86_64-20130219/sdk/tools:$PATH"
