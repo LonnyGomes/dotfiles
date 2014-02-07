@@ -3,6 +3,8 @@ set expandtab
 syntax on
 set shiftwidth=4
 
+set incsearch       "highlight on search
+
 set showmatch       "show matching braces
 
 "activating pathogen plugin
