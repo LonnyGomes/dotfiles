@@ -21,3 +21,6 @@ if has('gui_running')
 else
     colorscheme desert
 endif
+
+"to make use of it, open vim with -x
+set cryptmethod=blowfish    "set default encryption
