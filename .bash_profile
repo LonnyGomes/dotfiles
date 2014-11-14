@@ -33,7 +33,7 @@ export TERM=xterm-color
 #sets up proper alias commands when called
 alias ls='ls -G'
 alias ll='ls -hl'
-
+alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit' #node-webkit
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
