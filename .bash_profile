@@ -34,6 +34,7 @@ export TERM=xterm-color
 alias ls='ls -G'
 alias ll='ls -hl'
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit' #node-webkit
+alias brackets='open -a "Brackets"'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -43,7 +44,7 @@ export PATH="/Library/Frameworks/GDAL.framework/Programs:$PATH"
 
 ### node.js local installs path
 export PATH="/usr/local/share/npm/bin:$PATH"
-export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 ### add Android sdk tools to path
 export PATH=$PATH:~/code/Android/sdks/adt-current/sdk/tools/
