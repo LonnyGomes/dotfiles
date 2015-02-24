@@ -34,6 +34,7 @@ export TERM=xterm-color
 alias ls='ls -G'
 alias ll='ls -hl'
 alias startMongo="mongod --config /usr/local/etc/mongod.conf&"
+alias chrome_debug="open -a Google\ Chrome --args --disable-web-security"
 
 
 ### Added by the Heroku Toolbelt
