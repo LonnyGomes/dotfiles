@@ -48,7 +48,5 @@ export PATH="/Library/Frameworks/GDAL.framework/Programs:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
-### add Android sdk tools to path
+### set up android SDK
 export PATH=$PATH:~/code/Android/sdks/adt-current/sdk/tools/
-#set up android SDK
-#export PATH="/Users/carpelucem/code/Android/adt-bundle-mac-x86_64-20130219/sdk/platform-tools:/Users/carpelucem/code/Android/adt-bundle-mac-x86_64-20130219/sdk/tools:$PATH"
