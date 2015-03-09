@@ -49,4 +49,4 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 ### set up android SDK
-export PATH=$PATH:~/code/Android/sdks/adt-current/sdk/tools/
+export PATH=$PATH:~/code/Android/sdks/adt-current/tools:~/code/Android/sdks/adt-current/platform-tools
