@@ -17,3 +17,4 @@
 	ca = commit -a
 	amend = commit -a --amend
 	undo = reset HEAD~1 --mixed
+	graph = log --oneline --decorate --graph
