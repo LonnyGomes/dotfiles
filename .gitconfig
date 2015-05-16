@@ -13,8 +13,11 @@
 	trustExitCode = true
 [alias]
 	co = checkout
+	cb = checkout -b
 	ci = commit
 	ca = commit -a
+	cm = commit -m
+	cam = commit -a -m
 	amend = commit -a --amend
 	undo = reset HEAD~1 --mixed
 	graph = log --oneline --decorate --graph
