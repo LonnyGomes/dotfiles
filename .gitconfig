@@ -21,5 +21,6 @@
 	amend = commit -a --amend
 	undo = reset HEAD~1 --mixed
 	graph = log --oneline --decorate --graph
-	ll = log -1 --pretty=fuller
+	ll = log -1 --pretty=fuller --stat
 	st = status
+	short = log --oneline --decorate
