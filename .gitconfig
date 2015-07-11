@@ -18,7 +18,8 @@
 	ca = commit -a
 	cm = commit -m
 	cam = commit -a -m
-	amend = commit -a --amend
+	caa = commit -a --amend
+	amend = commit --amend
 	undo = reset HEAD~1 --mixed
 	graph = log --oneline --decorate --graph
 	ll = log -1 --pretty=fuller --stat
