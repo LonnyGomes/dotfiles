@@ -23,5 +23,6 @@
 	undo = reset HEAD~1 --mixed
 	graph = log --oneline --decorate --graph
 	ll = log -1 --pretty=fuller --stat
-	st = status
+	st = status -s
+	sta = status
 	short = log --oneline --decorate
