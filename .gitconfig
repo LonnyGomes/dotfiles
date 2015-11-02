@@ -25,3 +25,4 @@
 	ll = log -1 --pretty=fuller --stat
 	st = status
 	short = log --oneline --decorate
+	sl = shortlog -ns
