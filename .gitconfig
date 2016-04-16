@@ -25,5 +25,6 @@
 	ll = log -1 --pretty=fuller --stat
 	st = status -s
 	sta = status
+	stu = status -suno
 	short = log --oneline --decorate
 	sl = shortlog -ns
