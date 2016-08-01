@@ -37,6 +37,7 @@ alias startMongo="mongod --config /usr/local/etc/mongod.conf&"
 alias chrome_debug="open -a Google\ Chrome --args --disable-web-security"
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit' #node-webkit
 alias brackets='open -a "Brackets"'
+alias s3='aws s3'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
