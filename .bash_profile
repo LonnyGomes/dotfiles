@@ -7,12 +7,12 @@ if [ -f ~/.bash_profile.local ]; then
 fi
 
 #setup git auto completion
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f `xcode-select -p`/usr/share/git-core/git-completion.bash ]; then
+    . `xcode-select -p`/usr/share/git-core/git-completion.bash
 fi
 
 #add git branch to prompt
-. ~/.git-prompt.bash
+source `xcode-select -p`/usr/share/git-core/git-prompt.sh
 
 #prompted colors
 BLUE="\[\033[1;34m\]"
