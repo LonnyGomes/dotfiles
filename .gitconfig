@@ -28,3 +28,5 @@
 	stu = status -suno
 	short = log --oneline --decorate
 	sl = shortlog -ns
+	olog = log ..origin/master
+	odiff = diff ..origin/master
